@@ -22,14 +22,14 @@ import org.springframework.context.annotation.Bean;
         description = "API documentation for managing employees and departments",
         contact = @Contact(
             name = "Employee Management System",
-            email = "satyamshuklanew@gmail.com",
-            url = "#"
+            email = "shuklasatyam770@gmail.com",
+            url = "https://employee-management-fullstack-app.vercel.app/"
         ),
         license = @License(
             name = "MIT License",
             url = "https://opensource.org/licenses/MIT"
         ),
-        termsOfService = "#"
+        termsOfService = "https://employee-management-fullstack-app.vercel.app/"
     )
 )
 @SecurityScheme(
