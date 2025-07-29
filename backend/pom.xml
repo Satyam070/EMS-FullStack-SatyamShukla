@@ -86,13 +86,6 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- Faker for fake data generation -->
-    <dependency>
-      <groupId>com.github.javafaker</groupId>
-      <artifactId>javafaker</artifactId>
-      <version>1.0.2</version>
-    </dependency>
-
     <!-- Springdoc OpenAPI UI -->
     <dependency>
       <groupId>org.springdoc</groupId>

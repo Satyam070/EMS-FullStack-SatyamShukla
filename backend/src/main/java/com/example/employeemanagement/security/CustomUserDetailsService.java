@@ -18,13 +18,6 @@ public class CustomUserDetailsService implements UserDetailsService {
   @Autowired
   private UserRepository userRepository;
 
-  /**
-   * Load user by username.
-   *
-   * @param username The username
-   * @return The user details
-   * @throws UsernameNotFoundException If the username is not found
-   */
   @Override
   public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
     User user = userRepository.findByUsername(username)

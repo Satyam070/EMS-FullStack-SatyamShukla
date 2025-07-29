@@ -18,45 +18,23 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
   /** The user details service. */
   @Autowired private UserDetailsService userDetailsService;
 
-  /**
-   * Configure authentication.
-   *
-   * @param auth The authentication manager builder
-   * @throws Exception If an error occurs
-   */
   @Override
   protected void configure(AuthenticationManagerBuilder auth) throws Exception {
     auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
   }
 
-  /**
-   * Password encoder.
-   *
-   * @return The password encoder
-   */
   @Bean
   public PasswordEncoder passwordEncoder() {
     return new BCryptPasswordEncoder();
   }
 
-  /**
-   * Authentication manager bean.
-   *
-   * @return The authentication manager
-   * @throws Exception If an error occurs
-   */
   @Override
   @Bean
   public AuthenticationManager authenticationManagerBean() throws Exception {
     return super.authenticationManagerBean();
   }
 
-  /**
-   * Configure security.
-   *
-   * @param http The HTTP security
-   * @throws Exception If an error occurs
-   */
+
   @Override
   protected void configure(HttpSecurity http) throws Exception {
     // Disable authentication for all routes

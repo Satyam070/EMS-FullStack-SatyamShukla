@@ -5,7 +5,6 @@ com\example\employeemanagement\service\EmployeeService.class
 com\example\employeemanagement\controller\AuthController.class
 com\example\employeemanagement\controller\EmployeeController.class
 com\example\employeemanagement\security\JwtRequestFilter.class
-com\example\employeemanagement\config\DataInitializer.class
 com\example\employeemanagement\model\User.class
 com\example\employeemanagement\controller\DepartmentController.class
 com\example\employeemanagement\config\CorsConfig.class
