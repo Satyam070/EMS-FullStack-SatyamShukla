@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8081/api/departments';
+const API_URL = `${process.env.REACT_APP_API_URL}/departments`;
 
 // Get all departments
 export const getAllDepartments = async () => {
